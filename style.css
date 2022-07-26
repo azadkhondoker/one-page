@@ -1,0 +1,329 @@
+        /* ======fonts====== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+
+
+            /* ======common css====== */
+:root{
+    --color-primary:#5380EA;
+    --color-secondary:#f0b80d;
+    --color-secondary2:#ffd248;
+    --color-black:#000000;
+    --color-body:#515151;
+    --color-off-white:#ebf0ff;
+    --font-primary:'inter',sans-serif;
+}
+
+
+            /* ======reset-css====== */
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color:var(--color-black);
+    transition: 0.3s;
+}
+input:focus,textarea:focus,.form-control:focus{
+    outline: 0;
+    box-shadow: none;
+}
+body{
+   color: var(--color-body);
+   font-family: var(--font-primary);
+   font-size: 16px;
+   line-height: 1.5;
+   overflow-x: hidden;
+   background-color: var(--color-off-white);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    color: var(--color-black);
+    line-height: 1.5;
+    font-family: var(--font-primary);
+    margin: 0;
+}
+
+/* ======header-area====== */
+nav.navbar.navbar-expand-lg {}
+
+header.header-area .navbar {
+    padding-top: 56px;
+}
+
+.header-area .navbar .navbar-nav a {
+    color: var(--color-body);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+.header-area .navbar .navbar-nav a:not(:last-child) {
+    padding-right: 32px;
+}
+
+.header-btn {padding-left: 26px;}
+
+a.filled-btn {
+    background: #F0B80D;
+    border: 1px solid #FFD24B;
+    box-shadow: 0px 10px 34px #EAC555;
+    border-radius: 40px;
+    padding: 16px 32px;
+}
+            /* ======end-header-area */
+
+            /* ======hero-area-start====== */
+
+    .hero-area {
+    padding-top: 112px;
+    padding-bottom: 112px;
+    }
+  .hero-area .hero-content .hero-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 64px;
+}
+
+.hero-area .hero-content .hero-title span {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-area .hero-content .hero-title span::after {
+    position: absolute;
+    content: "";
+    background-image:url(assets/img/vector/Vector\ 17.png);
+    height: 10px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    z-index: -1;
+}
+
+.testimonial-boxses .testimonial-items {
+    display: flex;
+    padding: 24px;
+    background: #F6FBF8;
+    box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.08);
+    
+/* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.testimonial-boxses .testimonial-items .testimonial-thumbnail {
+    min-width: 64px;
+    margin-right: 20px;
+}
+
+.testimonial-boxses .testimonial-items .testimonial-thumbnail img {
+    border-radius: 50%;
+}
+            
+.testimonial-boxses .testimonial-items h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+}
+
+.testimonial-boxses::after {
+    position: absolute;
+    content: "";
+    bottom: -89px;
+    background: linear-gradient(180deg, #F6FBF8 0%, #F6FBF8 0.01%, rgba(246, 251, 248, 0) 100%);
+    backdrop-filter: blur(4px);
+/* Note: backdrop-filter has minimal browser support */
+    border-radius: 10px;
+    height: 73px;
+    z-index: -1;
+    width: 100%;
+}
+
+.testimonial-boxses {
+    position: relative;
+    z-index: 1;
+
+}
+
+            /* ======end hero-section-css====== */
+
+
+
+
+                /* ======start feature-section-css====== */
+     .feature-section{
+        padding-bottom: 112px;
+     }        
+
+    .feature-section .feature-box {
+        display: flex;
+        align-items: center;
+                
+  }
+                
+   .feature-section .row {
+         background: #F6FBF8;
+         box-shadow: 0px 34px 44px -20px rgba(185, 206, 234, 0.25);
+         border-radius: 10px;
+         padding: 70px;
+ }
+
+
+ .feature-box .icon {
+    min-width: 64px;
+    min-height: 64px;
+    margin-right: 24px;
+}
+
+.feature-box .content h4 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 10px;
+}
+
+.feature-box .content p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+        /* ======end feature-section-css====== */
+
+
+
+
+        /* ======start-brand-section-css */
+        .section-title img {
+            margin-top: -28px;
+        }
+        
+        .section-title h2 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+        }
+        
+        .section-title p {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+        }
+        .brand-section{
+            padding-bottom: 112px;
+        }
+        .brand-section .brand-img {
+            text-align: center;
+            align-items: center;
+        }
+ 
+        
+        .brand-section .section-title {
+            padding-bottom: 24px;
+        }
+
+        /* ======end-brand-section-css */
+
+        
+        /* ======start-contract-section */
+
+section.contract form {
+    background: #FFFFFF;
+/* s2 */
+    box-shadow: 0px 34px 44px -20px rgba(185, 206, 234, 0.25);
+    border-radius: 10px;
+    padding: 48px;
+}
+
+section.contract form h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    padding-bottom: 24px;
+}
+
+section.contract form p {
+    padding-bottom: 28px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+.contract{
+    padding-bottom: 112px;
+    border-bottom: 1px solid #0000;
+}
+
+form .contract-btn {
+    padding-top: 52px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"]{
+    padding: 16px;
+}
+
+form .contract-btn a {
+    padding: 16px 32px;
+    background: #5380EA;
+    border: 1px solid #5380EA;
+    box-shadow: 0px 10px 34px rgba(83, 128, 234, 0.5);
+    border-radius: 40px;
+}
+
+.contract-btn a.filled-btn {
+    padding: 15px 55px;
+}
+            /* ======end-contract-css */
+
+
+            /* ======start-footer-css */
+    .footer-section {
+        padding-top: 45px;
+        border-top: 2px solid #ddd;
+        padding-bottom: 0px;
+    }       
+    .footer-menu nav ul li {
+        display: inline-block;
+        margin-right: 30px;
+    }
+    .footer-menu nav ul li:last-child{
+        margin-right: 0px;
+    }
+    .footer-section .copyright {
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    /* ======start-footer-css */
+
+
+
+
+
+
+
+
+
+
+
+
